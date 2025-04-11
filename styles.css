@@ -1,0 +1,76 @@
+:root {
+  --color-bg: #d5e1ef;
+  --color-card-bg: #ffffff;
+  --color-title: #1f314f;
+  --color-text: #68778d;
+  --shadow-card: 0px 25px 25px rgba(0, 0, 0, 0.0477);
+
+  --radius-img: 10px;
+  --radius-card: 20px;
+
+  --font-family-base: 'Outfit', sans-serif;
+
+  --font-size-title: 22px;
+  --font-size-text: 15px;
+
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 40px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--color-bg);
+}
+
+img {
+  display: block;
+  width: 100%;
+  margin-bottom: var(--spacing-md);
+  border-radius: var(--radius-img);
+}
+
+.card {
+  display: block;
+  max-width: 320px;
+  max-height: 499px;
+  padding: var(--spacing-sm) var(--spacing-sm) var(--spacing-lg);
+  background-color: var(--color-card-bg);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  padding-inline: var(--spacing-sm);
+  text-align: center;
+}
+
+.content h1 {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-title);
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: var(--color-title);
+}
+
+.content p {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-text);
+  font-weight: normal;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  color: var(--color-text);
+}
