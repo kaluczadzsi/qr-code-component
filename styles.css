@@ -62,7 +62,6 @@ img {
   font-size: var(--font-size-title);
   font-weight: bold;
   line-height: 1.2;
-  letter-spacing: 0;
   color: var(--color-title);
 }
 
