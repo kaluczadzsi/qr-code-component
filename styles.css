@@ -10,12 +10,12 @@
 
   --font-family-base: 'Outfit', sans-serif;
 
-  --font-size-title: 22px;
-  --font-size-text: 15px;
+  --font-size-title: 1.375rem;
+  --font-size-text: 0.9375rem;
 
-  --spacing-sm: 16px;
-  --spacing-md: 24px;
-  --spacing-lg: 40px;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2.5rem;
 }
 
 * {
@@ -29,20 +29,20 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin-inline: var(--spacing-sm);
   background-color: var(--color-bg);
 }
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   margin-bottom: var(--spacing-md);
   border-radius: var(--radius-img);
 }
 
 .card {
   display: block;
-  max-width: 320px;
-  max-height: 499px;
+  max-width: 20rem;
   padding: var(--spacing-sm) var(--spacing-sm) var(--spacing-lg);
   background-color: var(--color-card-bg);
   border-radius: var(--radius-card);
